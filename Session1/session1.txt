@@ -1,0 +1,32 @@
+abd@abd-VirtualBox:~$ mkdir "abdo omran"
+abd@abd-VirtualBox:~$ cd "abdo omran"
+abd@abd-VirtualBox:~/abdo omran$ mkdir Documents
+abd@abd-VirtualBox:~/abdo omran$ cd Documents
+abd@abd-VirtualBox:~/abdo omran/Documents$ touch file1.txt file2.txt file3.txt
+abd@abd-VirtualBox:~/abdo omran/Documents$ ls
+file1.txt  file2.txt  file3.txt
+abd@abd-VirtualBox:~/abdo omran/Documents$ cd ..
+abd@abd-VirtualBox:~/abdo omran$ touch .hidden_file
+abd@abd-VirtualBox:~/abdo omran$ ls -a
+.  ..  Documents  .hidden_file
+abd@abd-VirtualBox:~/abdo omran$ nano file1.txt
+abd@abd-VirtualBox:~/abdo omran$ cat file1.txt
+Hello
+abd@abd-VirtualBox:~/abdo omran$ cd Documents
+abd@abd-VirtualBox:~/abdo omran/Documents$ mkdir -- -
+abd@abd-VirtualBox:~/abdo omran/Documents$ cd ./-
+abd@abd-VirtualBox:~/abdo omran/Documents/-$ cd ../..
+abd@abd-VirtualBox:~/abdo omran$ cp -r Documents My_Documents
+abd@abd-VirtualBox:~/abdo omran$ ls
+Documents  file1.txt  My_Documents
+abd@abd-VirtualBox:~/abdo omran$ cat .hidden_file
+abd@abd-VirtualBox:~/abdo omran$ mv Documents/file2.txt Documents/file3.txt .
+abd@abd-VirtualBox:~/abdo omran$ ls
+Documents  file1.txt  file2.txt  file3.txt  My_Documents
+abd@abd-VirtualBox:~/abdo omran$ cd ~
+abd@abd-VirtualBox:~$ rm -r "abdo omran"
+abd@abd-VirtualBox:~$ ls
+Desktop    Downloads  Music     Public  target.tar  test1.txt
+dir1       file       out.txt   s2      Templates   Videos
+Documents  link-file  Pictures  snap    test1
+abd@abd-VirtualBox:~$ 
