@@ -1,0 +1,451 @@
+abd@abd-VirtualBox:~$ find ~ -name Updated-Task-02.zip
+/home/abd/Downloads/Updated-Task-02.zip
+abd@abd-VirtualBox:~$ cd Downloads
+abd@abd-VirtualBox:~/Downloads$ ls
+Updated-Task-02.zip
+abd@abd-VirtualBox:~/Downloads$ unzip Updated-Task-02.zip
+Archive:  Updated-Task-02.zip
+   creating: Updated-Task-02/
+  inflating: Updated-Task-02/README.txt  
+  inflating: Updated-Task-02/.level-1.tar  
+abd@abd-VirtualBox:~/Downloads$ ls
+Updated-Task-02  Updated-Task-02.zip
+abd@abd-VirtualBox:~/Downloads$ cd Updated-Task-02
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02$ ls
+README.txt
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02$ cat README.txt
+Locate what you can't see.
+Find out what to do with it.
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02$ ls -a
+.  ..  .level-1.tar  README.txt
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02$ mv .level-1.tar level-1.tar
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02$ tar xf level-1.tar
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02$ ls
+level-1.tar  README.txt
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02$ ls -a
+.  ..  .level-1  level-1.tar  README.txt
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02$ mv .level-1 level-1
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02$ ls
+level-1  level-1.tar  README.txt
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02$ cd level-1
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1$ ls
+level-2  README.txt
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1$ cat README.txt
+Decompress "level-2".
+Hint: Most compression tools require it's suffix.
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1$ file level-2
+level-2: gzip compressed data, was "level-2.tar", last modified: Wed Aug  9 17:59:07 2023, from Unix, original size modulo 2^32 112640
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1$ mv level-2 level-2.gz
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1$ gunzip level-2.gz
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1$ ls
+level-2  README.txt
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1$ file level-2
+level-2: POSIX tar archive (GNU)
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1$ mv level-2 level-2.tar
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1$ tar xf level-2.tar
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1$ ls
+level-2  level-2.tar  README.txt
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1$ cd level-2
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2$ ls
+01VzXCtEZS  AVR4cOJJui  F7HxYNlWa1  kuDj7Ti4Id  pRQVevx1kv  vm5P2xLF3s
+09tuxAUkSZ  AXkzOy8ZzP  feBbPjPHsA  kVQzoTdmBO  PVhcqo825N  VMVoKBX4Qu
+0MaqBh51eE  b8L3KxPJL3  FKtcWd8ViA  L3QwW94Azo  Q6QURkVvYf  vOcM3EYMXw
+1Rc48mLISP  bc83b2Byu2  fky7p46DOi  l6FQ8rGXcW  QIGyaTtmlW  VUOJouKqL9
+1t7LeNZeIl  BeSbKu0Ogb  fSikeo7Jtz  l8fShvYkRA  QirM8dLKSD  VxWCuMyoCO
+2dBiyDY1PQ  BsdD4ojJkc  fTBdzWqgkc  lcVizkoO1R  Qv3QTzvZC1  w9ophYtx44
+2tqNyIRWZk  bvSabnQtuB  FUSxQX2TeD  lvEy6vrtZe  README.txt  waa5BUbYjL
+3aI6ZRWi7g  ciyaIBrj64  g18DV62wEd  LXdwN4DGye  rHC2JXoQSc  wfbzcLn49x
+3HClX3dFMm  clktsGviqW  gB9k1O4ZT6  lxQpP8fJrM  rjS1PORSqI  WU2NIZw5bL
+3nhuQzOgpI  CoXO2qfhv8  gBT5u0vLT5  mIQgRJXCLp  rn4s52kOCO  WWgF2QTu1U
+40Mg6vDbYN  cqxENw21F1  Gf0hDzawoe  mLD2604WjZ  rnTFX18Jh9  WxGYCzojb5
+4bq72IzcAj  cTJdoZGT00  Gi0sWVVQmE  mMwQyrbtaZ  rTAkta2aW2  WzkBDyZf09
+4CkUBprXze  cUJtGyfwcE  GqeOr84K6i  Mn1k5s3x2R  rzz4HDYtQb  x2OxGPBNwZ
+4OAvfgFenY  cuL74htcTP  gUm1Kw3MsJ  mTJFxGhibA  s82TBxnZgd  X7by8vw474
+4Qm9FLdd1E  cYLRnO8xIB  GuxvN3cJ7U  n80qgsvhlQ  SkWLO4DmJj  xiRKbhzAt6
+4TqWZorrCe  D240Im7S6f  H2TS1vp6Xt  n8QxXKvUat  soPx5vMfvS  Xnmws6DuHJ
+54is18fJ6D  dcWFp0gN0U  HC3gnSrNHL  n9Gy45gDYd  SpGacqvoQe  Y2WinDQzOb
+5CnJF4NcXe  dkbSpLYJE5  HDe7NHRINO  NABe6RrZS9  Sv7z35zbDG  y7U81AE7BP
+6jKgIUUWGx  DQ3kjLgCUV  HRHgAeIQKP  NB8PtjcBPu  T4TiKdPbRw  yc0GFVKDtL
+6LythIyWzQ  dW436qn2Pa  hsM9mQuMTH  NuvecJk6rH  tmDRcrdYa9  YH3RBGocdA
+6QcByCct9B  DWahK49MnT  hynub0MKNl  nV9Fht2ABW  TynxkdcmfZ  ymuoaRLefH
+7B5l8AC1M8  dwmlaLoghH  Ib1jBtgkP4  O0Jt20BDT8  u8APo7fuFv  yWegzIJdDb
+7dnQ0OZO7U  DYCdqY7wJN  iJfohlDIrt  o1hEPIsnq0  uCBBCPnmb2  yWY8iLmL2v
+7f6nrbSyXM  E0bi5j8X9V  IXzIL2c9IA  o5zluFzkcg  uH7zN1UJSF  Yx2PUbl2gA
+8HuZDGUf7D  EC1LKYOR0Z  jbZwCGWF1u  oATDmz0CAK  UkoXWlT8ck  ZDe6elrEn5
+8lNsncDmgT  ECIShbzsBE  jGu9MApzJB  OBfROJ7kKU  UkXg7Lp9iV  ZgiaL4uwSD
+a8wKwwWNRJ  EDPOSQuyWk  JiMEslX4PO  OEQ9RG7Cam  Uo2uLQHfWm  ZhfPkBCn6B
+ABtpOP8TR9  EJd4UALueA  JVucZ5s2sO  OlDXrxU8tn  URJcbPH7ig  zQ85ieoBzD
+AbyVd8kDq7  emEeo94yqd  jzjKDCAuJh  OQUNDxbuAf  uUeLfbjNyx  zTpHflQtBt
+aD09T4P1xb  eRz0wDJzB6  k0KGHDEFmp  P9w2t9K9Ju  UUrQyToe6M  ZwCSnEFDCS
+afHUHOaYAb  Etsj7NECd9  KNXMn8sBL8  PBQjGeeXZ2  uYt23HMkvu  zXOU7yVyjx
+AKf6S1hWVZ  eTY7qTsykD  KO4TANambB  PDsc45eDhU  v2LInrvkDO
+AofrZBGKhB  evJEy0ce9D  kPIkdmGR9B  po63smRLBt  v9kNm4bENt
+aT6OddrPAr  f4sJ94QCRL  kr6RDEYCed  pptcUXKeGS  VkL2bz9W98
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2$ find . -name README.txt
+./README.txt
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2$ cat README.txt
+Locate "level-3".
+Use a general method to decompress it.
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2$ find . -name level-3
+./gBT5u0vLT5/level-3
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2$ cd gBT5u0vLT5
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5$ ls
+level-3
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5$ file level-3
+level-3: bzip2 compressed data, block size = 900k
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5$ mv level-3 level-3.bz2
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5$ bunzip2 level-3.bz2
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5$ ls
+level-3
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5$ file level-3
+level-3: POSIX tar archive (GNU)
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5$ tar xf level-3
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5$ ls
+level-3
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5$ cd level-3
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5/level-3$ ls
+00aBxtql7r  5tJnO1Mwzf  8u4f62oAYb  byVoAmiOqs  EHm7bcCxj1  gOWuBZZgn2  J3K5BY52dp  kkIu8kVXLo  mxG418at98  ojc7SuLzMV  R0LpA1qK4F  Tbi1MdwiMX  WhTtCYas3M  Ye8R8ZOvJ9
+0aba2tPi4R  5VoPA03kvi  8X1ovlX6ex  bze36b6xjZ  epBL6naqQR  GPaN65ikSl  J5feTUwPso  kOIOppD8hx  mydABLXwyL  orzpz7CBBQ  R6okint5JZ  tEgA7tGwxB  wJC19bchr2  ygasPrK3kG
+0QYBUNJixX  6AJpxbHYkm  9CA6eRBprt  C5KrlOGYlu  ePj0HMi3nh  gu78Zpnknw  jahdjqT54b  kp1ujuDGKO  n4d9SlSzcV  Ou1q6zOh5n  R82WkcyQAx  TezFlyJz9o  WLuasYnMvP  YgeyHmPrtP
+17pfO4tY4m  6C8RwQ9kGP  9GqYmpQsAS  cDfzzIGULi  Eqk382soFH  gu92R3c92I  JArjmQWPVq  krWRFtvYDP  n4MCXv5XM2  oV3aef60WL  rcEkx0b0WC  TFkiwAHDrG  Wm14GdEGcm  ysdoXYcYQq
+1NBA3mJTQC  6hnWZbro0I  9my7brVWmo  cF1AG2dtLr  eT21MMr22o  gupiPOsJzC  JBDnoFKLcx  kT3eEAfVcY  N5lXyVotHN  OXZ3OOGJ7O  README.txt  Tt0xmDrg4Y  wpJyCPLODS  YVAPjrh8Up
+1pnvifRmA6  6JPHCI1K8M  9NNnGuH7A1  cjcKUQDGLl  eT909HWyck  hb4zKjD5G4  JbMcWq9tku  kwmQK5z76U  nBoQgGxoGX  oZ5HOQe6X0  rgNTkxVkxN  tZCE2HQg8s  wpoGQ7WmSg  zEmK04yIqc
+22ix6enm8X  6lie6mPCRe  9QBLcfEf91  cKiyNtE0yD  ETRyNzIpYk  hBv1LejGKu  Jc0EEC4sua  L5DOn3iY18  NdkrRTZmr9  p194n4sSpi  RnL5L0QLbY  uAw4PKT7E0  WSxUR7IJd8  ZenzUsQydR
+2GsF4Kn1PG  6mnK6keHIi  a6HPyy5Mz5  ClbTpohwVU  ev8BCScTMa  Hf8ovJhWKI  JgVwSWAUsr  L8ZzpZTLz5  NHag0dTW3U  p3ARvi0q4F  RPZAvV75tm  udqz57oeuX  wZ4LJKpHW6  zet1AFeHNl
+2IFaRh0Jxc  6mpTfHgnlX  A8SqBitLRB  cStCLsSELl  F5Db7l8s9j  hGCeu2NgZ5  JlhNaDm4f7  LeUtklcfmE  nlgqxKuRC3  p6PVEBfSyK  RU4rJzjPfg  ufdeX2Dk7C  x2CDPgz6Jk  zghxQE4JGJ
+30msooUqJf  6vigp6VM7d  aFjSvqXqWE  ctnOoPIga1  F9OYJjkGiB  HuSBc8QKYi  JnOT2WHKbE  LKfMizQQjE  NLM96g2hH3  PaOzJn0sJV  RWWLnFwGtv  v2ME2J4GuF  x3Nvoy3Ucl  ZNq1fiVP6F
+3Ig28f7Xa8  6ZJgIXN3P0  AI8sfDgnhT  cWRi45wacA  fCLOGDR05y  HXq7gqQZ5Z  jpO4wGMT57  lowIuX2RQI  Nmuh6DvLkc  PDJdFxfgvh  rwZwqdxHhJ  V64A9vKnYq  x3SkxfEItU  zTfi6AwgZQ
+3SSDrwrwmt  71qxiSKgAY  AJtW9NcRLy  cWZv9iI87X  Fdvgo1aqTT  i4CkeVfT7S  JqAekDHYif  LtH4X99Uw3  nR711EHtmU  penDnjNMQc  rzSTDqa7oV  vkaOISlk2I  X62Vq1yIyL  zxmnKldpmY
+3TpnDd6PaY  74gKRNrKVf  ANRcGwDkvK  cX6YaqFDFY  FeBBLsJEYS  iCR4qC97HM  jrMKucOmtp  LZ5jebusoa  nSC9OkT1E3  pH9s3o8foP  SaaZymLdoG  vLWtq7N2aR  X6lkChFKsj  zzgiKI2xSS
+3wTdqmDig6  77RwxhcZTx  ayHSb1kjNd  D5JYr3I592  FJsgrBEwbJ  IE4xWwbydi  jVBkVAbTHj  M1vV6QxnH1  nwt49CVPtC  pI49N7Zoxn  SaQtx8SNld  VneCQhwmfv  XapfbudtZp  zZU6ymQky6
+3XXNloi4gV  7C4OyiuQc4  b4BF572o41  dBJSXzmpb1  flbjrqIXMS  IiLRIuK1Fi  jVGv0HeZvG  m59pSiQG2p  O009zeKkif  Pmf5TqkkYg  sf7ajd5INC  vUbRKbYlKR  xBsGYZHomA
+3YhvETOVcv  7nMGZvigiL  b957oPA24t  Dd9KxIjxSB  fn95Z2sG3o  IKeqpTmvmW  jvyPQ8Z8ht  m7lRDpRTUJ  O0V7mQCicJ  pO4Lt5DPrX  skVRxkHK04  Vw5Jm3saUP  xigSiLU79u
+4jFmUBgygR  7PFGHcmfa2  Bb0kZiNxDz  dK320XCmR0  FYrh0rmC4q  ioOe8b7TsJ  JYdPDFpOIe  MaqkHpS39h  o6Q2i1NUXc  psmL4dk69Y  sNrtW0eiZF  vz1uLzTKjO  XkrAGaosYZ
+4vG2fYLy6B  7sxFwD2jGw  BbreWoCXSv  DKiaUm3WBb  G9UhKYNLgv  iOplykVsBo  k2yYJNQcLu  MKQErXMkPE  OAbH1oFg57  pXXxEWcKkz  SqAZPx7CbA  VZw2jtUdZD  xRxKkdCTU8
+53IaK7n1np  82aRYKaCZB  bduLsR7v4K  Doi1I9Z8TE  GaMed1WIDN  ip23ESdwGT  K56S3V4AQ6  moQuVgMB1f  OaRp7TV8pe  q4gh4nODZa  SRgPbWeEG6  W6AdwbmalK  xYCpOSRLsl
+5H5OLdA8qE  88exEg2MMo  bOKXTvk63r  dqbKkDKbZl  gcb0bfLbVM  IygdcTaoYP  K9kyHBbw7y  mRET49bBGR  ObIefWWqqM  qFO0JDSF0N  sRhTcN4PIw  WfUKyzFeEv  xYlmccmE5f
+5ME7YKcHsa  8IOqsSAWIo  BrJvEu79eg  dtLZdglPV3  gfLQDXjJAW  iymCtoFUVf  Kfce3CFjhh  mu6c42Y1qo  OFx3U24MoP  Qh9GBAd3mF  sVyNLUXzut  WFyKhZdOcx  Y0nB0Ep1my
+5tAchjHlmE  8OLXyd5ai0  BTf86zJsB3  Dux6sHDdCW  Gksn5ca8Jn  j3JsNAEsm1  KJBdbwTmzD  mwILTjPhCP  OHWTswrtBk  QM053Y9Vw1  T0gYx5T5ks  wgibrPHhJq  y1IAp2YdZc
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5/level-3$ 
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5/level-3$ find . -name README.txt
+./README.txt
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5/level-3$ cat README.txt
+You're seeking a file with a certain size.
+Find the link to get the size.
+
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5/level-3$ ls -li
+total 804
+1066562 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 00aBxtql7r
+1066736 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 0aba2tPi4R
+1066750 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 0QYBUNJixX
+1066815 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 17pfO4tY4m
+1066526 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 1NBA3mJTQC
+1066569 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 1pnvifRmA6
+1066710 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 22ix6enm8X
+1066509 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 2GsF4Kn1PG
+1066794 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 2IFaRh0Jxc
+1066805 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 30msooUqJf
+1066191 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 3Ig28f7Xa8
+1066739 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 3SSDrwrwmt
+1066704 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 3TpnDd6PaY
+1066804 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 3wTdqmDig6
+1066523 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 3XXNloi4gV
+1066818 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 3YhvETOVcv
+1066764 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 4jFmUBgygR
+1066490 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 4vG2fYLy6B
+1066521 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 53IaK7n1np
+1066812 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 5H5OLdA8qE
+1066501 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 5ME7YKcHsa
+1066730 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 5tAchjHlmE
+1066513 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 5tJnO1Mwzf
+1066808 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 5VoPA03kvi
+1066510 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 6AJpxbHYkm
+1066728 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 6C8RwQ9kGP
+1066787 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 6hnWZbro0I
+1066714 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 6JPHCI1K8M
+1066707 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 6lie6mPCRe
+1066495 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 6mnK6keHIi
+1066549 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 6mpTfHgnlX
+1066759 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 6vigp6VM7d
+1066469 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 6ZJgIXN3P0
+1066752 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 71qxiSKgAY
+1066740 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 74gKRNrKVf
+1066500 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 77RwxhcZTx
+1066551 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 7C4OyiuQc4
+1066793 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 7nMGZvigiL
+1066171 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 7PFGHcmfa2
+1066487 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 7sxFwD2jGw
+1066189 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 82aRYKaCZB
+1066758 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 88exEg2MMo
+1066198 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 8IOqsSAWIo
+1066751 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 8OLXyd5ai0
+1066725 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 8u4f62oAYb
+1066505 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 8X1ovlX6ex
+1066182 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 9CA6eRBprt
+1066542 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 9GqYmpQsAS
+1066816 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 9my7brVWmo
+1066512 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 9NNnGuH7A1
+1066511 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 9QBLcfEf91
+1066525 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 a6HPyy5Mz5
+1066814 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 A8SqBitLRB
+1066541 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 aFjSvqXqWE
+1066820 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 AI8sfDgnhT
+1066745 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 AJtW9NcRLy
+1066705 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 ANRcGwDkvK
+1066823 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 ayHSb1kjNd
+1066795 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 b4BF572o41
+1066777 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 b957oPA24t
+1066548 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Bb0kZiNxDz
+1066489 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 BbreWoCXSv
+1066532 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 bduLsR7v4K
+1066576 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 bOKXTvk63r
+1066743 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 BrJvEu79eg
+1066563 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 BTf86zJsB3
+1066775 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 byVoAmiOqs
+1066712 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 bze36b6xjZ
+1066484 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 C5KrlOGYlu
+1066706 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 cDfzzIGULi
+1066482 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 cF1AG2dtLr
+1066822 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 cjcKUQDGLl
+1066185 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 cKiyNtE0yD
+1066176 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 ClbTpohwVU
+1066499 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 cStCLsSELl
+1066496 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 ctnOoPIga1
+1066178 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 cWRi45wacA
+1066733 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 cWZv9iI87X
+1066566 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 cX6YaqFDFY
+1066721 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 D5JYr3I592
+1066769 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 dBJSXzmpb1
+1066543 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Dd9KxIjxSB
+1066580 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 dK320XCmR0
+1066538 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 DKiaUm3WBb
+1066196 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Doi1I9Z8TE
+1066731 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 dqbKkDKbZl
+1066466 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 dtLZdglPV3
+1066720 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Dux6sHDdCW
+1066537 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 EHm7bcCxj1
+1066774 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 epBL6naqQR
+1066749 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 ePj0HMi3nh
+1066194 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Eqk382soFH
+1066557 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 eT21MMr22o
+1066717 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 eT909HWyck
+1066454 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 ETRyNzIpYk
+1066190 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 ev8BCScTMa
+1066701 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 F5Db7l8s9j
+1066498 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 F9OYJjkGiB
+1066578 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 fCLOGDR05y
+1066529 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Fdvgo1aqTT
+1066468 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 FeBBLsJEYS
+1066483 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 FJsgrBEwbJ
+1066203 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 flbjrqIXMS
+1066800 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 fn95Z2sG3o
+1066528 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 FYrh0rmC4q
+1066459 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 G9UhKYNLgv
+1066582 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 GaMed1WIDN
+1066741 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 gcb0bfLbVM
+1066179 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 gfLQDXjJAW
+1066819 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 Gksn5ca8Jn
+1066825 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 gOWuBZZgn2
+1066748 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 GPaN65ikSl
+1066476 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 gu78Zpnknw
+1066810 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 gu92R3c92I
+1066698 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 gupiPOsJzC
+1066699 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 hb4zKjD5G4
+1066457 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 hBv1LejGKu
+1066502 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Hf8ovJhWKI
+1066474 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 hGCeu2NgZ5
+1066570 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 HuSBc8QKYi
+1066765 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 HXq7gqQZ5Z
+1066175 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 i4CkeVfT7S
+1066726 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 iCR4qC97HM
+1066558 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 IE4xWwbydi
+1066760 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 IiLRIuK1Fi
+1066527 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 IKeqpTmvmW
+1066771 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 ioOe8b7TsJ
+1066747 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 iOplykVsBo
+1066581 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 ip23ESdwGT
+1066503 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 IygdcTaoYP
+1066480 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 iymCtoFUVf
+1066433 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 j3JsNAEsm1
+1066811 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 J3K5BY52dp
+1066801 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 J5feTUwPso
+1066732 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 jahdjqT54b
+1066579 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 JArjmQWPVq
+1066547 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 JBDnoFKLcx
+1066531 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 JbMcWq9tku
+1066473 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Jc0EEC4sua
+1066201 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 JgVwSWAUsr
+1066697 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 JlhNaDm4f7
+1066708 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 JnOT2WHKbE
+1066507 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 jpO4wGMT57
+1066781 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 JqAekDHYif
+1066485 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 jrMKucOmtp
+1066737 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 jVBkVAbTHj
+1066183 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 jVGv0HeZvG
+1066452 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 jvyPQ8Z8ht
+1066709 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 JYdPDFpOIe
+1066472 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 k2yYJNQcLu
+1066486 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 K56S3V4AQ6
+1066715 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 K9kyHBbw7y
+1066516 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 Kfce3CFjhh
+1066784 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 KJBdbwTmzD
+1066465 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 kkIu8kVXLo
+1066716 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 kOIOppD8hx
+1066564 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 kp1ujuDGKO
+1066756 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 krWRFtvYDP
+1066700 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 kT3eEAfVcY
+1066453 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 kwmQK5z76U
+1066456 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 L5DOn3iY18
+1066713 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 L8ZzpZTLz5
+1066789 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 LeUtklcfmE
+1066761 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 LKfMizQQjE
+1066724 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 lowIuX2RQI
+1066807 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 LtH4X99Uw3
+1066184 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 LZ5jebusoa
+1066766 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 M1vV6QxnH1
+1066478 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 m59pSiQG2p
+1066584 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 m7lRDpRTUJ
+1066742 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 MaqkHpS39h
+1066792 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 MKQErXMkPE
+1066199 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 moQuVgMB1f
+1066181 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 mRET49bBGR
+1066722 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 mu6c42Y1qo
+1066780 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 mwILTjPhCP
+1066757 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 mxG418at98
+1066798 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 mydABLXwyL
+1066567 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 n4d9SlSzcV
+1066555 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 n4MCXv5XM2
+1066172 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 N5lXyVotHN
+1066782 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 nBoQgGxoGX
+1066193 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 NdkrRTZmr9
+1066530 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 NHag0dTW3U
+1066204 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 nlgqxKuRC3
+1066497 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 NLM96g2hH3
+1066776 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 Nmuh6DvLkc
+1066518 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 nR711EHtmU
+1066515 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 nSC9OkT1E3
+1066796 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 nwt49CVPtC
+1066577 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 O009zeKkif
+1066546 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 O0V7mQCicJ
+1066188 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 o6Q2i1NUXc
+1066539 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 OAbH1oFg57
+1066702 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 OaRp7TV8pe
+1066202 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 ObIefWWqqM
+1066177 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 OFx3U24MoP
+1066173 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 OHWTswrtBk
+1066192 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 ojc7SuLzMV
+1066573 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 orzpz7CBBQ
+1066471 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Ou1q6zOh5n
+1066535 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 oV3aef60WL
+1066727 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 OXZ3OOGJ7O
+1066768 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 oZ5HOQe6X0
+1066559 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 p194n4sSpi
+1066540 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 p3ARvi0q4F
+1066195 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 p6PVEBfSyK
+1066561 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 PaOzJn0sJV
+1066522 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 PDJdFxfgvh
+1066517 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 penDnjNMQc
+1066572 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 pH9s3o8foP
+1066703 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 pI49N7Zoxn
+1066565 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Pmf5TqkkYg
+1066524 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 pO4Lt5DPrX
+1066462 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 psmL4dk69Y
+1066797 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 pXXxEWcKkz
+1066200 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 q4gh4nODZa
+1066493 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 qFO0JDSF0N
+1066460 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Qh9GBAd3mF
+1066791 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 QM053Y9Vw1
+1066533 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 R0LpA1qK4F
+1066754 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 R6okint5JZ
+1066552 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 R82WkcyQAx
+1066550 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 rcEkx0b0WC
+1066463 -rw-r--r-- 1 abd abd   75 أغس  9 19:35 README.txt
+1066479 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 rgNTkxVkxN
+1066723 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 RnL5L0QLbY
+1066729 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 RPZAvV75tm
+1066718 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 RU4rJzjPfg
+1066738 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 RWWLnFwGtv
+1066772 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 rwZwqdxHhJ
+1066790 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 rzSTDqa7oV
+1066734 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 SaaZymLdoG
+1066467 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 SaQtx8SNld
+1066491 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 sf7ajd5INC
+1066696 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 skVRxkHK04
+1066695 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 sNrtW0eiZF
+1066455 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 SqAZPx7CbA
+1066536 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 SRgPbWeEG6
+1066575 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 sRhTcN4PIw
+1066492 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 sVyNLUXzut
+1066711 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 T0gYx5T5ks
+1066803 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 Tbi1MdwiMX
+1066553 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 tEgA7tGwxB
+1066481 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 TezFlyJz9o
+1066788 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 TFkiwAHDrG
+1066519 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Tt0xmDrg4Y
+1066534 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 tZCE2HQg8s
+1066568 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 uAw4PKT7E0
+1066735 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 udqz57oeuX
+1066477 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 ufdeX2Dk7C
+1066514 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 v2ME2J4GuF
+1066545 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 V64A9vKnYq
+1066826 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 vkaOISlk2I
+1066464 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 vLWtq7N2aR
+1066719 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 VneCQhwmfv
+1066783 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 vUbRKbYlKR
+1066494 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Vw5Jm3saUP
+1066187 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 vz1uLzTKjO
+1066770 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 VZw2jtUdZD
+1066286 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 W6AdwbmalK
+1066458 -rw-r--r-- 1 abd abd   34 أغس  9 19:35 WfUKyzFeEv
+1066488 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 WFyKhZdOcx
+1066554 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 wgibrPHhJq
+1066753 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 WhTtCYas3M
+1066773 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 wJC19bchr2
+1066821 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 WLuasYnMvP
+1066767 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Wm14GdEGcm
+1066746 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 wpJyCPLODS
+1066470 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 wpoGQ7WmSg
+1066544 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 WSxUR7IJd8
+1066583 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 wZ4LJKpHW6
+1066755 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 x2CDPgz6Jk
+1066475 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 x3Nvoy3Ucl
+1066762 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 x3SkxfEItU
+1066802 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 X62Vq1yIyL
+1066197 lrwxrwxrwx 1 abd abd   10 أغس  9 19:35 X6lkChFKsj -> WfUKyzFeEv
+1066506 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 XapfbudtZp
+1066508 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 xBsGYZHomA
+1066786 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 xigSiLU79u
+1066174 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 XkrAGaosYZ
+1066799 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 xRxKkdCTU8
+1066779 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 xYCpOSRLsl
+1066180 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 xYlmccmE5f
+1066461 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 Y0nB0Ep1my
+1066817 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 y1IAp2YdZc
+1066778 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 Ye8R8ZOvJ9
+1066813 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 ygasPrK3kG
+1066763 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 YgeyHmPrtP
+1066571 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 ysdoXYcYQq
+1066806 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 YVAPjrh8Up
+1066574 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 zEmK04yIqc
+1066744 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 ZenzUsQydR
+1066504 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 zet1AFeHNl
+1066520 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 zghxQE4JGJ
+1066824 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 ZNq1fiVP6F
+1066809 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 zTfi6AwgZQ
+1066785 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 zxmnKldpmY
+1066560 drwxr-xr-x 2 abd abd 4096 أغس  9 19:35 zzgiKI2xSS
+1066556 -rw-r--r-- 1 abd abd    0 أغس  9 19:35 zZU6ymQky6
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5/level-3$ file WfUKyzFeEv
+WfUKyzFeEv: ASCII text
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5/level-3$ cat WfUKyzFeEv
+73 bytes is your target file size
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5/level-3$ find . -size 73c
+./m7lRDpRTUJ/xVMvVOKNW5
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5/level-3$ cd m7lRDpRTUJ
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5/level-3/m7lRDpRTUJ$ file xVMvVOKNW5
+xVMvVOKNW5: ASCII text
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5/level-3/m7lRDpRTUJ$ cat xVMvVOKNW5
+Congrats!! You have finished the Task Successfully, you can rest now :D.
+abd@abd-VirtualBox:~/Downloads/Updated-Task-02/level-1/level-2/gBT5u0vLT5/level-3/m7lRDpRTUJ$ 
+
+
