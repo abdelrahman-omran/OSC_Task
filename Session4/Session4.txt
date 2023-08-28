@@ -1,0 +1,43 @@
+abd@abd-VirtualBox:~/s4$ vim system_info.sh
+abd@abd-VirtualBox:~/s4$ chmod u+x system_info.sh
+abd@abd-VirtualBox:~/s4$ ./system_info.sh
+Username: abd
+Kernel Version: 6.2.0-26-generic
+abd@abd-VirtualBox:~/s4$ vim file_check.sh
+abd@abd-VirtualBox:~/s4$ chmod u+x file_check.sh
+abd@abd-VirtualBox:~/s4$ ./file_check.sh file1.txt /home/abd/s4
+File Exists
+contents of file1.txt:
+this is file1.txt
+abd@abd-VirtualBox:~/s4$ ./file_check.sh file2.txt /home/abd/s4
+File does not exist
+abd@abd-VirtualBox:~/s4$ vim rename_files.sh
+abd@abd-VirtualBox:~/s4$ chmod u+x rename_files.sh
+abd@abd-VirtualBox:~/s4$ touch lion.png tiger.png
+abd@abd-VirtualBox:~/s4$ ls
+file1.txt      horse.jpg  rename_files.sh  system_info.sh  tiger.png
+file_check.sh  lion.png   Session4.txt     test.sh
+abd@abd-VirtualBox:~/s4$ ./rename_files.sh png image
+abd@abd-VirtualBox:~/s4$ ls
+file1.txt      horse.jpg   image2.png       Session4.txt    test.sh
+file_check.sh  image1.png  rename_files.sh  system_info.sh
+abd@abd-VirtualBox:~/s4$ vim calculator.sh
+abd@abd-VirtualBox:~/s4$ chmod u+x calculator.sh
+abd@abd-VirtualBox:~/s4$ ./calculator.sh
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+Enter your choice: 1
+Enter the first number: 10
+Enter the second number: 20
+10 + 20 = 30
+Enter your choice: 2
+Enter the first number: 10
+Enter the second number: 20
+10 - 20 = -10
+Enter your choice: 5
+Exiting...
+abd@abd-VirtualBox:~/s4$ 
+
